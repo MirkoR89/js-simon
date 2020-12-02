@@ -24,6 +24,11 @@ setTimeout(function timer6000() {
     if (pcNumber.includes(listUserNumber[i])) {
       listGuessNumber.push(listUserNumber[i]);
       console.log(listGuessNumber);
+
+      //Una volta inseriti i 5 numeri, il software dice quanti e quali numeri sono stati ricordati.
+      document.getElementById("list_number").innerHTML = "hai indovinato" + " " + listGuessNumber.length + " " + "numeri";
+
+      document.getElementById("list_guess_number").innerHTML = "numeri corretti:" + " " + listGuessNumber;
     }
   }
 }, 6000);
