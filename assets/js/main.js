@@ -19,12 +19,14 @@ setTimeout(function timer6000() {
     userNumber = Number(prompt("Quali numeri sono apparsi?"));
     listUserNumber.push(userNumber);
   }
+  var listGuessNumber = [];
+  for (i = 0; i < listUserNumber.length; i++) {
+    if (pcNumber.includes(listUserNumber[i])) {
+      listGuessNumber.push(listUserNumber[i]);
+      console.log(listGuessNumber);
+    }
+  }
 }, 6000);
-
-
-
-
-
 /*------------------------ CORREZIONE ESERCIZIO ----------------------------- */
 //Funzione per generare numeri random.
 /*function randomNumberFromTo(min, max) {
